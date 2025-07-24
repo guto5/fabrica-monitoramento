@@ -1,0 +1,27 @@
+{
+  "name": "projeto-stw-fabrica",
+  "private": true,
+  "workspaces": [
+      "apps/*"
+  ],
+  "scripts": {
+      "dev": "npm run dev -w web",
+      "build": "npm run build -w web",
+      "lint": "npm run lint -w web",
+      "typecheck": "npm run typecheck -w web",
+      "test": "npx jest"
+  },
+  "devDependencies": {
+      "@testing-library/jest-dom": "^6.4.8",
+      "@testing-library/react": "^16.0.0",
+      "@types/jest": "^29.5.12",
+      "jest": "^29.7.0",
+      "jest-environment-jsdom": "^29.7.0",
+      "ts-jest": "^29.2.3",
+      "typescript": "^5"
+  },
+  "overrides": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+  }
+}
